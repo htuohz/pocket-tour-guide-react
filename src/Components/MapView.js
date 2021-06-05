@@ -31,7 +31,14 @@ class MapView extends Component {
         }
       })
     }
-    navigator.geolocation.getCurrentPosition(getCoords)
+    if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(getCoords)
+    }
+    else{
+      console.log('Geolocation not supported')
+    }
+      
+    
 
   }
 
