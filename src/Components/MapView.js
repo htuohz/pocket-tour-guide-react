@@ -1,8 +1,7 @@
 import React,{ Component } from 'react'
-import { urls } from '../Const'
+import { BASE_URL } from '../Const/urls'
 
 const API_KEY = process.env.REACT_APP_MAP_API_KEY
-const BASE_URL = urls.BASE_URL
 
 class MapView extends Component {
   constructor(props){
